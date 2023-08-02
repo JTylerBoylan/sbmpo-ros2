@@ -1,0 +1,15 @@
+# Use the latest Ubuntu as the base image
+FROM ros:humble
+
+# Install necessary packages for building C++ applications
+RUN apt-get update && \
+    apt-get install -y \
+        build-essential \
+        cmake \
+        gdb
+
+# Set the working directory
+WORKDIR /ros2_ws/src
+
+# Set the default volume path
+VOLUME /ros2_ws/src

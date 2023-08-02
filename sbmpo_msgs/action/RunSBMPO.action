@@ -1,0 +1,9 @@
+# Request
+sbmpo_msgs/SearchParameters parameters
+---
+# Result
+sbmpo_msgs/SearchResults results
+---
+# Feedback
+uint64 time_us
+uint64 iteration
