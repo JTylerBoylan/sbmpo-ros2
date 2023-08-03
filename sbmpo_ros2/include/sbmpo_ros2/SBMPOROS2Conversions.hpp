@@ -25,6 +25,7 @@ inline sbmpo::SearchParameters fromParametersMsg(const sbmpo_msgs::msg::SearchPa
     sbmpo::SearchParameters params;
     params.max_iterations = msg.max_iterations;
     params.max_generations = msg.max_generations;
+    params.time_limit_us = msg.time_limit_us;
     params.sample_time = msg.sample_time;
     params.grid_resolution = msg.grid_resolution;
     params.start_state = fromStateMsg(msg.start_state);
